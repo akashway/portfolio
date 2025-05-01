@@ -71,6 +71,25 @@ body {
     background: var(--text);
 }
 
+/* GitHub link in navbar */
+.nav-links .github-link {
+    color: #007BFF; /* Blue color for the GitHub link */
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .github-link i {
+    margin-right: 5px; /* Adds space between the icon and text */
+}
+
+.nav-links .github-link:hover {
+    color: #333; /* Dark color on hover */
+    text-decoration: underline; /* Optional underline on hover */
+}
+
+
 /* Sections */
 .section {
     padding: 4rem 2rem;
@@ -128,15 +147,41 @@ body {
     margin-top: 2rem;
   }
 
-  
-.project-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--card-bg); /* move bg here */
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 180px; /* or 200px — adjust based on your design */
+    object-fit: cover; /* keeps aspect ratio and fills the area */
+    display: block;
+  }
+  
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+  .project-info p {
+    flex-grow: 1; /* lets description area expand */
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-links {
+    margin-top: auto; /* pushes links to bottom */
   }
   
   .project-card:hover {
@@ -144,27 +189,12 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   }
   
-  .project-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .project-info {
-    padding: 1rem;
-    background-color: var(--card-bg);
-  }
   
   .project-info h3 {
     margin: 0 0 0.5rem 0;
     font-size: 1.2rem;
   }
   
-  .project-info p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-  }
 
   .tech-stack {
     color: #666;
@@ -173,38 +203,135 @@ body {
     margin-top: 4px;
   }
   
+  .project-links a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
   
-/* Contact */
-.contact-form {
-    max-width: 400px;
-    margin: 2rem auto;
+  .project-links a:hover {
+    background-color: #e0e0e0;
+  }
+
+  .work-in-progress {
+    display: inline-block;
+    background-color: #ffeeba;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 8px;
+    font-weight: bold;
+  }  
+  
+
+/* Contact Section Styling */
+#contact {
+    background-color: var(--card); /* Use variable for background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text); /* Use text color variable */
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text); /* Use text color variable */
+}
+
+#contact a {
+    color: var(--primary); /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #0056b3; /* Darker blue for hover effect */
+    text-decoration: underline;
+}
+
+#contact form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card); /* Use variable for form background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 0.75rem;
-    border-radius: 5px;
+#contact form input,
+#contact form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.contact-form button {
-    padding: 0.75rem;
-    border: none;
-    background: var(--primary);
+#contact form button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: var(--primary); /* Use variable for button background */
     color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+#contact form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
 
 /* Footer */
 footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem;
-    background: var(--card);
 }
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff; /* or your theme color */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a i {
+    margin-right: 8px;
+}
+
+.footer-links a:hover {
+    color: #00bcd4; /* hover color */
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -227,3 +354,10 @@ footer {
         display: flex;
     }
 }
+
+@media (max-width: 600px) {
+    .project-card img {
+      height: 140px;
+    }
+  }
+  

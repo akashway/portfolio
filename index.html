@@ -26,16 +26,21 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <!-- GitHub Link Added -->
+                <li><a href="https://github.com/akashway" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
                 <li><button id="theme-toggle">🌙</button></li>
             </ul>
         </nav>
     </header>
+    
 
     <section id="home" class="section hero">
         <img src="./assets//profile.jpg" alt="Avatar" class="profile-pic" />
         <h1>Hello, I'm <span>Akash Mishra</span></h1>
-        <p>Frontend Developer with 1.5+ years of experience crafting responsive, user-friendly interfaces — currently
-            expanding into backend development to become a full-stack developer.</p>
+        <p>A React developer with 1.5+ years of hands-on experience in building modern UI, integrating APIs, and
+            optimizing frontend performance. Currently exploring Backend and GenAI integrations..</p>
     </section>
 
     <section id="skills" class="section">
@@ -65,49 +70,73 @@
     <section id="projects" class="section">
         <h2>Personal Projects</h2>
         <div class="projects-container">
-            <div class="projects-container">
-                <a href="https://pocketnotes-wheat.vercel.app/" target="_blank" class="project-card">
-                    <img src="./assets//pocket-notes.png" alt="Project 1" />
-                    <div class="project-info">
-                        <h3>Pocket Notes</h3>
-                        <p><strong>Pocket Notes:</strong> A note-taking web app that lets users create and organize
-                            notes by custom groups. Easily manage your thoughts, tasks, or ideas in a clean and
-                            intuitive interface.</p>
-                        <p class="tech-stack"><strong>Built with HTML, CSS and React </strong></p>
+
+            <div class="project-card">
+                <img src="./assets/pocket-notes.png" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Pocket Notes</h3>
+                    <p><strong>Pocket Notes:</strong> A note-taking web app that lets users create and organize
+                        notes by custom groups. Easily manage your thoughts, tasks, or ideas in a clean and
+                        intuitive interface.</p>
+                    <p class="tech-stack"><strong>Built with HTML, CSS and React</strong></p>
+
+                    <div class="project-links">
+                        <a href="https://pocketnotes-wheat.vercel.app/" target="_blank">🔗 Live</a>
+                        <a href="https://github.com/akashway/pocketnotes" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i> Github Repo
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="projects-container">
-                <a href="https://rock-paper-scissor-taupe-one.vercel.app/" target="_blank" class="project-card">
-                    <img src="./assets/rock-paper-scissor.png" alt="Project 2" />
-                    <div class="project-info">
-                        <h3>Rock Paper Scissor</h3>
-                        <p>
-                            <strong>Rock Paper Scissors </strong> is a classic game with unlimited rounds, allowing users to play endlessly while tracking scores. Scores are stored in local storage to persist even after refreshing or closing the browser.
-                        </p>
-                        <p class="tech-stack"><strong>Built with HTML, CSS and JS </strong></p>
+
+            <div class="project-card">
+                <img src="./assets/rock-paper-scissor.png" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Rock Paper Scissor</h3>
+                    <p>
+                        <strong>Rock Paper Scissors </strong> is a classic game with unlimited rounds, allowing
+                        users to play endlessly while tracking scores. Scores are stored in local storage to persist
+                        even after refreshing or closing the browser.
+                    </p>
+                    <p class="tech-stack"><strong>Built with HTML, CSS and JS </strong></p>
+
+                    <div class="project-links">
+                        <a href="https://rock-paper-scissor-taupe-one.vercel.app/" target="_blank">🔗 Live</a>
+                        <a href="https://github.com/akashway/rock-paper-scissor" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i> Github Repo
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="projects-container">
-                <a href="https://react-tech-bot.vercel.app/" target="_blank" class="project-card">
-                    <img src="./assets/tech-bot.png" alt="Project 3" />
-                    <div class="project-info">
-                        <h3>React Tech Bot</h3>
-                        <p> <strong>Tech Bot</strong> is an AI-powered assistant that answers only React-related questions. Built with React and integrated with Meta's LLaMA model, it delivers precise, LLM-generated responses for developers.</p>
-                        <p class="tech-stack"><strong>React + LLM(GenAI) </strong></p>
-                        <details>
-                            <summary>⚠️ Work in Progress</summary>
-                            This project is currently under development and may change.
-                        </details>
+            <div class="project-card">
+                <img src="./assets/tech-bot.png" alt="Project 1" />
+                <div class="project-info">
+                    <h3>React Tech Bot</h3>
+                    <p> <strong>Tech Bot</strong> is an AI-powered assistant that answers only React-related
+                        questions. Built with React and integrated with Meta's LLaMA model, it delivers precise,
+                        LLM-generated responses for developers.</p>
+                    <p class="tech-stack"><strong>React + LLM(GenAI) </strong></p>
+
+                    <div class="project-links">
+                        <a href="https://react-tech-bot.vercel.app/" target="_blank">🔗 Live</a>
+                        <a href="https://github.com/akashway/react-tech-bot" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i> Github Repo
+                        </a>
                     </div>
-                </a>
+                    <p class="work-in-progress">⚠️ Work in Progress</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:akashmishraway@gmail.com">📧 akashmishraway@gmail.com</a> |</p>
+        <p>Check out my GitHub: 
+            <a href="https://github.com/akashway" target="_blank">
+                <i class="fab fa-github"></i> github.com/akashway
+            </a>
+        </p>
         <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
@@ -115,10 +144,16 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+    
 
-    <footer>
+    <footer class="footer-links">
         <p>&copy; 2025 Akash Mishra. All rights reserved.</p>
+        <p>
+            <a href="mailto:akashmishraway@gmail.com">📧 akashmishraway@gmail.com</a> |
+            <a href="https://github.com/akashway" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
     </footer>
+    
 
     <script src="script.js"></script>
 </body>
