@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero">
+        <img src="./assets//profile.jpg" alt="Avatar" class="profile-pic" />
+        <h1>Hello, I'm <span>Akash Mishra</span></h1>
+        <p>Frontend Developer with 1.5+ years of experience crafting responsive, user-friendly interfaces — currently
+            expanding into backend development to become a full-stack developer.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-card"><i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-card"><i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card"><i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <!-- <div class="skill-card"><i class="fab fa-react"></i><p>Node.JS</p></div>
+      <div class="skill-card"><i class="fab fa-react"></i><p>Express</p></div>
+      <div class="skill-card"><i class="fab fa-react"></i><p>MongoDB</p></div> -->
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Personal Projects</h2>
+        <div class="projects-container">
+            <div class="projects-container">
+                <a href="https://pocketnotes-wheat.vercel.app/" target="_blank" class="project-card">
+                    <img src="./assets//pocket-notes.png" alt="Project 1" />
+                    <div class="project-info">
+                        <h3>Pocket Notes</h3>
+                        <p>Built with HTML, CSS and React</p>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-container">
+                <a href="https://rock-paper-scissor-taupe-one.vercel.app/" target="_blank" class="project-card">
+                    <img src="./assets/rock-paper-scissor.png" alt="Project 2" />
+                    <div class="project-info">
+                        <h3>Rock Paper Scissor</h3>
+                        <p>Built with HTML, CSS and JS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Akash Mishra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
