@@ -165,6 +165,14 @@ body {
     font-size: 0.95rem;
     color: var(--text-secondary);
   }
+
+  .tech-stack {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+  
   
 /* Contact */
 .contact-form {
